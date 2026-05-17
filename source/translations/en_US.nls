@@ -21,11 +21,11 @@
       <File>
         <Read>
           <Caption Value="File read error"/>
-          <Message Value="Error #%1:s (%2:s) occured while reading from file &quot;%0:s&quot;."/>
+          <Message Value="Error #%1:s (%2:s) occurred while reading from file &quot;%0:s&quot;."/>
         </Read>
         <Write>
           <Caption Value="File write error"/>
-          <Message Value="Error #%1:s (%2:s) occured while writing to file &quot;%0:s&quot;."/>
+          <Message Value="Error #%1:s (%2:s) occurred while writing to file &quot;%0:s&quot;."/>
         </Write>
       </File>
       <Codes>
@@ -159,7 +159,7 @@
               <lbUnicodeViewLabel Caption="Viewed as Unicode"/>
             </pViewUnicodeLabel>
             <File_Error>
-              <Error Text="A file or processing error occured."/>
+              <Error Text="A file or processing error occurred."/>
             </File_Error>
             <Unsupported_file>
               <Binary Text="Binary data files are not supported."/>
@@ -269,12 +269,12 @@
       <pTop>
         <cbLocale Hint="Locale for the words to add to the dictionary."/>
         <lbLocale Hint="Select the Locale for the words to add to the dictionary." Caption="Locale:"/>
-        <btnInvert Hint="Toggle all slecetions." Caption="Invert"/>
+        <btnInvert Hint="Toggle all selections." Caption="Invert"/>
         <btnNone Hint="Unselect all words." Caption="None"/>
       </pTop>
       <pButtons>
         <btnSave Hint="Save the changes to the dictionary." Caption="Save"/>
-        <btnReload Hint="Reload the dinctionary and forget any unsaved changes." Caption="Reload"/>
+        <btnReload Hint="Reload the dictionary and forget any unsaved changes." Caption="Reload"/>
         <btnAdd Hint="Add the selected words to the dictionary for the selected locale." Caption="Add to Dictionary"/>
         <btnMerge Hint="Merge the User dictionary words into the Master dictionary." Caption="Merge"/>
       </pButtons>
@@ -338,7 +338,7 @@
         </tsTextEditor>
         <tsEncoding Hint="File input and output encoding options." Caption="Encoding">
           <rgFileEnding Hint="Require that files must end on a blank line." Caption="Files end with New Line">
-            <rbFileEndWhatever Hint="All files can end wth text or blank line." Caption="Don't care."/>
+            <rbFileEndWhatever Hint="All files can end with text or blank line." Caption="Don't care."/>
             <rbFileEndExport Hint="Make sure that exported files end with a blank line." Caption="Ensure only for Export."/>
             <rbFileEndAll Hint="Require original files to end with a blank line." Caption="Enforce on all text files."/>
           </rgFileEnding>
@@ -461,7 +461,7 @@
           <btnCancel Caption="Cancel"/>
         </fButtonPanel>
       </fLowerPanel>
-      <Message Text="The locale for this file is expected to be %s.&#xA;&#xA;Are you certian you wish to add to the dictionary under the %s locale?"/>
+      <Message Text="The locale for this file is expected to be %s.&#xA;&#xA;Are you certain you wish to add to the dictionary under the %s locale?"/>
     </fDiffLocaleDialog>
     <fCorrectFileEndingDialog Caption="No final line ending">
       <fLowerPanel>
