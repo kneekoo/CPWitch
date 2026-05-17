@@ -269,7 +269,7 @@
       <pTop>
         <cbLocale Hint="Locale for the words to add to the dictionary."/>
         <lbLocale Hint="Select the Locale for the words to add to the dictionary." Caption="Locale:"/>
-        <btnInvert Hint="Toggle all slecetions." Caption="Invert"/>
+        <btnInvert Hint="Toggle all selections." Caption="Invert"/>
         <btnNone Hint="Unselect all words." Caption="None"/>
       </pTop>
       <pButtons>
