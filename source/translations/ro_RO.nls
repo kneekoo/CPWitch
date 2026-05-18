@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIG Language="en_US">
+  <Translation>
+    <Revision_0 Date="2026-05-17" Contributor="Nicolae Crefelean"/>
+  </Translation>
+  <Application>
+    <ModalButtons>
+      <Ok Value="Ok"/>
+      <Cancel Value="Anulează"/>
+      <Yes Value="Da"/>
+      <No Value="Nu"/>
+      <Close Value="Închide"/>
+      <Abort Value="Anulează"/>
+      <Retry Value="Reîncearcă"/>
+      <Ignore Value="Ignoră"/>
+      <All Value="Toate"/>
+      <NoToAll Value="Nu pentru toate"/>
+      <YesToAll Value="Da pentru toate"/>
+    </ModalButtons>
+    <Error>
+      <File>
+        <Read>
+          <Caption Value="Eroare la citirea fișierului"/>
+          <Message Value="Eroarea #%1:s (%2:s) întâmpinată la citirea din fișierul &quot;%0:s&quot;."/>
+        </Read>
+        <Write>
+          <Caption Value="Eroare la scrierea fișierului"/>
+          <Message Value="Eroarea #%1:s (%2:s) întâmpinată la scrierea în fișierul &quot;%0:s&quot;."/>
+        </Write>
+      </File>
+      <Codes>
+        <ecUnknown Value="Eroare necunoscută."/>
+        <ec0 Value="Nicio eroare"/>
+        <ec2 Value="Fișierul n-a fost găsit"/>
+        <ec3 Value="Calea nu a fost găsită"/>
+        <ec4 Value="Prea multe fișiere deschise"/>
+        <ec5 Value="Acces refuzat"/>
+        <ec6 Value="Handle fișier nevalid"/>
+        <ec12 Value="Mod de acces fișier nevalid"/>
+        <ec17 Value="Nu se poate redenumi pe alt dispozitiv"/>
+        <ec100 Value="Eroare la citire de pe disc"/>
+        <ec101 Value="Eroare la scriere pe disc"/>
+        <ec102 Value="Fișierul nu este alocat"/>
+        <ec103 Value="Fișierul nu este deschis"/>
+        <ec104 Value="Fișierul nu este deschis pentru scriere"/>
+        <ec105 Value="Fișierul nu este deschis pentru citire"/>
+        <ec106 Value="Format numeric nevalid"/>
+        <ec150 Value="Discul este protejat la scriere"/>
+      </Codes>
+    </Error>
+    <FormatSettings>
+      <CurrencyFormat Value="0"/>
+      <NegCurrFormat Value="1"/>
+      <DecimalSeparator Value=","/>
+      <CurrencyDecimals Value="2"/>
+      <DateSeparator Value="/"/>
+      <TimeSeparator Value=":"/>
+      <ListSeparator Value=","/>
+      <CurrencyString Value="RON"/>
+      <ShortDateFormat Value="d/m/y"/>
+      <LongDateFormat Value="dd&quot; &quot;mmmm&quot; &quot;yyyy"/>
+      <TimeAMString Value="AM"/>
+      <TimePMString Value="PM"/>
+      <ShortTimeFormat Value="hh:nn"/>
+      <LongTimeFormat Value="hh:nn:ss"/>
+      <ShortMonthNames>
+        <Index_1 Value="Ian"/>
+        <Index_2 Value="Feb"/>
+        <Index_3 Value="Mar"/>
+        <Index_4 Value="Apr"/>
+        <Index_5 Value="Mai"/>
+        <Index_6 Value="Iun"/>
+        <Index_7 Value="Iul"/>
+        <Index_8 Value="Aug"/>
+        <Index_9 Value="Sep"/>
+        <Index_10 Value="Oct"/>
+        <Index_11 Value="Nov"/>
+        <Index_12 Value="Dec"/>
+      </ShortMonthNames>
+      <LongMonthNames>
+        <Index_1 Value="Ianuarie"/>
+        <Index_2 Value="Februarie"/>
+        <Index_3 Value="Martie"/>
+        <Index_4 Value="Aprilie"/>
+        <Index_5 Value="Mai"/>
+        <Index_6 Value="Iunie"/>
+        <Index_7 Value="Iulie"/>
+        <Index_8 Value="August"/>
+        <Index_9 Value="Septembrie"/>
+        <Index_10 Value="Octombrie"/>
+        <Index_11 Value="Noiembrie"/>
+        <Index_12 Value="Decembrie"/>
+      </LongMonthNames>
+      <ShortDayNames>
+        <Index_1 Value="Dum"/>
+        <Index_2 Value="Lun"/>
+        <Index_3 Value="Mar"/>
+        <Index_4 Value="Mie"/>
+        <Index_5 Value="Joi"/>
+        <Index_6 Value="Vin"/>
+        <Index_7 Value="Sâm"/>
+      </ShortDayNames>
+      <LongDayNames>
+        <Index_1 Value="Duminică"/>
+        <Index_2 Value="Luni"/>
+        <Index_3 Value="Marți"/>
+        <Index_4 Value="Miercuri"/>
+        <Index_5 Value="Joi"/>
+        <Index_6 Value="Vineri"/>
+        <Index_7 Value="Sâmbătă"/>
+      </LongDayNames>
+      <TwoDigitYearCenturyWindow Value="50"/>
+    </FormatSettings>
+  </Application>
+  <Controls>
+    <fMain Caption="Codepage Witch">
+      <alMain>
+        <actOpen Hint="Deschide un fișier text" Caption="Deschide fișier..."/>
+        <actPreferences Hint="Vizualizează sau modifică preferințele Codepage Witch" Caption="Preferințe..."/>
+        <actOnlineUpdate Hint="Caută actualizări pentru Codepage Witch" Caption="Verifică actualizare..."/>
+        <actDebugLog Hint="Vezi jurnalul de depanare" Caption="Jurnal de depanare..."/>
+        <actListAll Hint="Afișează toate codepage-urile cunoscute." Caption="Toate cunoscute"/>
+        <actListPartial Hint="Afișează doar codepage-urile parțial compatibile" Caption="Toate posibile"/>
+        <actListCompatible Hint="Afișează doar codepage-urile complet compatibile" Caption="Doar compatibile"/>
+        <actCodepageFilter Hint="Filtrează lista de codepage-uri" Caption="Filtru codepage"/>
+        <actExportASCII Hint="Exportă un text fișier ca ASCII 7-BIT care nu necesită un codepage sau caractere unicod" Caption="Exportă ASCII..."/>
+        <actExportCodepage Hint="Exportă un fișier text codat într-un format cu codepage" Caption="Exportă cu codepage..."/>
+        <actExportUnicode Hint="Exportă un fișier text codat în format UTF-8" Caption="Exportă ca UTF-8..."/>
+        <actEditASCII Hint="Editează un fișier simplu în ASCII 7-BIT" Caption="Editare ASCII..."/>
+        <actEditCodepage Hint="Editează un fișier codepage" Caption="Editare codepage..."/>
+        <actEditUnicode Hint="Editează un fișier text Unicod" Caption="Editare unicod..."/>
+        <actExportNone Hint="Nu se poate exporta acest tip de fișier" Caption="Fără export"/>
+        <actClose Hint="Închide actualul fișier text" Caption="Închide fișierul"/>
+        <actCloseAll Hint="Închide toate fișierele text deschise" Caption="Închide toate"/>
+        <actEditNone Hint="Acest tip de fișier nu se poate edita" Caption="Niciun editor"/>
+        <actDictionary Hint="Deschide editorul de dicționar utilizator" Caption="Dicționar utilizator"/>
+      </alMain>
+      <pBody>
+        <pFileList>
+          <pFileListLabel>
+            <lbFileList Caption="Fișiere text"/>
+          </pFileListLabel>
+        </pFileList>
+        <pCodepageList>
+          <pCodepageListLabel>
+            <lbCodepageLabel Caption="Codepage-uri"/>
+          </pCodepageListLabel>
+          <lvCodepageList>
+            <Analyzing Caption="Analizare"/>
+            <Error Caption="Eroare"/>
+            <Not_implemented Caption="Neimplementat"/>
+            <Any_Codepage Caption="Oricare codepage"/>
+            <Binary_data Caption="Fișier binar"/>
+          </lvCodepageList>
+        </pCodepageList>
+        <pViewers>
+          <pViewUnicode>
+            <pViewUnicodeLabel>
+              <lbUnicodeViewLabel Caption="Vizualizat ca unicod"/>
+            </pViewUnicodeLabel>
+            <File_Error>
+              <Error Text="S-a întâmpinat o eroare de fișier sau procesare."/>
+            </File_Error>
+            <Unsupported_file>
+              <Binary Text="Fișiere cu date binare nu pot fi procesate."/>
+            </Unsupported_file>
+          </pViewUnicode>
+          <pCodepage>
+            <pViewCodepageLabel>
+              <lbViewCodepageLabel Value="Vizualizat în codepage %s"/>
+            </pViewCodepageLabel>
+          </pCodepage>
+        </pViewers>
+      </pBody>
+      <Locales>
+        <ar_SA Text="Arabă (Arabia Saudită)"/>
+        <cs_CZ Text="Cehă (Cehia)"/>
+        <da_DK Text="Daneză (Danemarca)"/>
+        <de_CH Text="Germană (Elveția)"/>
+        <de_DE Text="Germană (Germania)"/>
+        <en_US Text="Engleză (Statele Unite)"/>
+        <eo Text="Esperanto"/>
+        <es_ES Text="Spaniolă (Spania)"/>
+        <et_EE Text="Estonă (Estonia)"/>
+        <fi_FI Text="Finlandeză (Finlanda)"/>
+        <fr_CA Text="Franceză (Canada)"/>
+        <fr_FR Text="Franceză (Franța)"/>
+        <he_IL Text="Ebraică (Israel)"/>
+        <hu_HU Text="Maghiară (Ungaria)"/>
+        <is_IS Text="Iselandeză (Islanda)"/>
+        <it_IT Text="Italiană (Italia)"/>
+        <ja_JP Text="Japoneză (Japonia)"/>
+        <lt_LT Text="Lituaniană (Lituania)"/>
+        <la Text="Latină"/>
+        <lv_LV Text="Letonă (Letonia)"/>
+        <nl_NL Text="Olandeză (Olanda)"/>
+        <no_NO Text="Norvegiană (Norvegia)"/>
+        <pl_PL Text="Poloneză (Polonia)"/>
+        <pl_MAZ Text="Poloneză (Mazovia)"/>
+        <pt_BR Text="Portugheză (Brazilia)"/>
+        <pt_PT Text="Portugheză (Portugalia)"/>
+        <ru_RU Text="Rusă (Rusia)"/>
+        <sk_SK Text="Slovacă (Slovacia)"/>
+        <sl_SI Text="Slovenă (Slovenia)"/>
+        <sr_RS Text="Sârbă (Serbia)"/>
+        <zh_CN Text="Chineză (Simplificată)"/>
+        <sv_SE Text="Suedeză (Suedia)"/>
+        <tr_TR Text="Turcă (Turcia)"/>
+        <uk_UA Text="Ucraineană (Ucraina)"/>
+        <bg_BG Text="Bulgară (Bulgaria)"/>
+        <el_GR Text="Greacă (Grecia)"/>
+        <fil_PH Text="Filipineză (Filipine)"/>
+        <tl_PH Text="Tagalog (Filipine)"/>
+        <haw_US Text="Hawaiiană (Statele Unite)"/>
+        <id_ID Text="Indoneziană (Indonezia)"/>
+        <ko_KR Text="Coreeană (Coreea de Sud)"/>
+        <nb_NO Text="Norvegiană Bokmål (Norvegia)"/>
+        <nn_NO Text="Norvegiană Nynorsk (Norvegia)"/>
+        <ro_RO Text="Română (România)"/>
+        <sm_WS Text="Samoană (Samoa)"/>
+        <th_TH Text="Thai (Thailanda)"/>
+        <vi_VN Text="Vietnameză (Vietnam)"/>
+        <en_GB Text="Engleză (Marea Britanie)"/>
+        <ar_EG Text="Arabă (Egipt)"/>
+        <hi_IN Text="Hindi (India)"/>
+        <ur_PK Text="Urdu (Pakistan)"/>
+        <zh_TW Text="Chineză (Tradițională)"/>
+        <hr_HR Text="Croată (Croația)"/>
+        <ca_ES Text="Catalană (Spania)"/>
+        <es_MX Text="Spaniolă (Mexic)"/>
+        <es_AR Text="Spaniolă (Argentina)"/>
+        <be_BY Text="Belarusă (Belarusia)"/>
+        <mk_MK Text="Macedonă (Macedonia de nord)"/>
+        <sr_ME Text="Sârbă (Muntenegru)"/>
+        <sq_AL Text="Albaneză (Albania)"/>
+        <en_IN Text="Engleză (India)"/>
+        <bn_BD Text="Bengaleză (Bangladesh)"/>
+        <en_AU Text="Engleză (Australia)"/>
+        <en_CA Text="Engleză (Canada)"/>
+      </Locales>
+      <statBar>
+        <Processing Caption="Procesare"/>
+        <LineEnding CR="CR" LF="LF" CRLF="CRLF"/>
+        <Codepage Caption="Codepage"/>
+        <Error Caption="Eroare"/>
+        <Unicode Caption="Unicod"/>
+        <NoEncoding Caption="ASCII"/>
+        <Binary Caption="Binar"/>
+        <Percentage Format="%s%%" />
+      </statBar>
+      <ExportUnicodeDialog>
+        <Title Caption="Exportă fișierul ca UTF-8"/>
+        <File Filters="Toate fișierele (*.*)|*.*|Fișiere unicod (*.UTF-8)|*.UTF-8"/>
+      </ExportUnicodeDialog>
+      <OpenFilesDialog>
+        <Title Caption="Deschidere fișiere existente"/>
+        <File Filters="Toate fișierele (*.*)|*.*|Fișiere unicod (*.UTF-8)|*.UTF-8"/>
+      </OpenFilesDialog>
+      <ExportCodepageDialog>
+        <Title Caption="Exportă fișierul cu codepage %s"/>
+        <File Filters="Toate fișierele (*.*)|*.*"/>
+      </ExportCodepageDialog>
+      <ExportASCIIDialog>
+        <Title Caption="Salvează fișierul ca 7-bit ASCII simplu"/>
+        <File Filters="Toate fișierele (*.*)|*.*"/>
+      </ExportASCIIDialog>
+    </fMain>
+    <fDictEditForm Caption="Actualizare dicționar">
+      <pTop>
+        <cbLocale Hint="Localizarea cuvintelor de adăugate în dicționar"/>
+        <lbLocale Hint="Alege localizarea cuvintelor de adăugat în dicționar" Caption="Localizare:"/>
+        <btnInvert Hint="Comută toate selecțiile" Caption="Inversează"/>
+        <btnNone Hint="Deselectează toate cuvintele" Caption="Niciunul"/>
+      </pTop>
+      <pButtons>
+        <btnSave Hint="Salveează modificările în dicționar." Caption="Salvează"/>
+        <btnReload Hint="Reîncarcă dicționarul și ignoră modificările care nu au fost salvate" Caption="Reîncarcă"/>
+        <btnAdd Hint="Adaugă cuvintele selectate în dicționar pentru localizarea selectată" Caption="Adaugă în dicționar"/>
+        <btnMerge Hint="Integrează dicționarul utilizator în dicționarul general" Caption="Integrează"/>
+      </pButtons>
+      <Not_Avail Text="n/a"/>
+      <Any_Locale Text="(oricare localizare)"/>
+      <Unknown_Locale Text="(localizare necunoscută)"/>
+    </fDictEditForm>
+    <fOptionsDialog Caption="Preferințe Codepage Witch">
+      <pPages>
+        <tsAbout Hint="Despre această aplicație" Caption="Despre">
+          <lbCopyright Caption="Copyright %s"/>
+          <lbVersion Caption="Versiunea %0:s (build %1:s)"/>
+          <lbApplication Caption="Aplicația &quot;%s&quot;"/>
+        </tsAbout>
+        <tsGeneral Hint="Setări generale aplicație" Caption="General">
+          <gbUserLanguage Caption="Limbă interfață">
+            <cxLanguageChoice Default="(implicită)"/>
+            <pLanguagePreferred>
+              <lbLanguagePreferred Caption="Limba preferată:"/>
+            </pLanguagePreferred>
+            <lbLanguageSystem Caption="Limba sistemului:  %s"/>
+          </gbUserLanguage>
+          <gbMiscellaneous Caption="Diverse">
+            <cbShowHints Caption="Arată sfaturi când curosrul mausului trece peste butoane"/>
+            <cbColorButtons Caption="Folosește butoane color în bara de unelte"/>
+          </gbMiscellaneous>
+          <gbOnlineUpdate Caption="Actualizare online">
+            <cbAutoCheck Caption="Verifică automat dacă există actualizări"/>
+            <pUpdateButton>
+              <btnUpdateCheck Hint="Caută cea mai recentă versiune pe serverul online" Caption="Verifică acum..."/>
+            </pUpdateButton>
+          </gbOnlineUpdate>
+        </tsGeneral>
+        <tsSession Hint="Opțiuni privind sesiunile aplicației" Caption="Sesiune">
+          <gbSessionFiles Caption="Fișiere de sesiune">
+            <cbReopenFiles Hint="Redeschide fișierele neînchise din sesiunea anterioară" Caption="Redeschide fișierele anterioare"/>
+            <cbWarnMissing Hint="Avertizează când un fișier din sesiunea anterioară nu mai există" Caption="Avertizare fișiere lipsă"/>
+            <cbOpenExport Hint="Deschide automat fișierele exportate, pentru recenzie" Caption="Deschide fișierele exportate"/>
+          </gbSessionFiles>
+          <gbLocaleDetection Caption="Detecție localizare">
+            <cbUseFileExt Hint="Preferă extensiile fișierelor în locul detecției euristice, când e posibil" Caption="Preferă extensiile fișierelor"/>
+          </gbLocaleDetection>
+          <gbCodepage Caption="Codepage">
+            <cbAutoSelectCP Hint="Selectează automat codepage-ul preferat pentru conversie" Caption="Selectează automat codepage-ul"/>
+          </gbCodepage>
+        </tsSession>
+        <tsTextEditor Hint="Opțiuni editor de text" Caption="Editor de text">
+          <gbExternalEditor Caption="Editor extern">
+            <cbUseExternalEditor Hint="Folosește un editor de text extern în locul editorului simplu integrat" Caption="Folosește un editor de text extern"/>
+            <pEditor>
+              <btnBrowseEditor Hint="Navighează spre editorul de text extern" Caption="Browse"/>
+            </pEditor>
+            <BrowseDialog Caption="Navighează spre editorul de text extern">
+              <Title Caption="Navighează spre editorul de text extern"/>
+              <File>
+                <Unix Exec="Toate fișierele|*"/>
+                <Windows Exec="Fișiere executabile|*.EXE|Toate fișierele|*.*"/>
+              </File>
+            </BrowseDialog>
+          </gbExternalEditor>
+        </tsTextEditor>
+        <tsEncoding Hint="Opțiuni de salvare pentru intrări/ieșiri fișiere" Caption="Salvare">
+          <rgFileEnding Hint="Impune o linie nouă la sfârșitul fișierelor" Caption="Linie nouă la sfârșitul fișierelor">
+            <rbFileEndWhatever Hint="Toate fișierele se pot termina cu text sau cu o linie nouă" Caption="Indiferent"/>
+            <rbFileEndExport Hint="Impune ca fișierele exportate să se termine cu o linie goală" Caption="Impune doar pentru export"/>
+            <rbFileEndAll Hint="Impune ca fișierele originale să se termine cu o linie goală" Caption="Impune pentru toate fișierele text"/>
+          </rgFileEnding>
+        </tsEncoding>
+        <tsViewer Hint="Opțiuni vizualizare DOS și unicod" Caption="Vizualizare">
+          <gbUnicodeView Caption="Vizualizare unicod">
+            <tbUnicodeScale Caption="10"/>
+            <lbScaleOfUnicode Caption="Scalare font %s%%"/>
+          </gbUnicodeView>
+          <gbDOSView Caption="Vizualizare DOS">
+            <tbDOSScale Caption="1"/>
+            <lbDOSScale Caption="Scalare font %s%%"/>
+          </gbDOSView>
+          <gbViewers Caption="Vizualizare">
+            <cbSingleViewer Hint="Afișează un singur fișier în fereastra principală" Caption="Doar un fișier în interfață"/>
+          </gbViewers>
+        </tsViewer>
+      </pPages>
+      <fLowerPanel>
+        <fButtonPanel>
+          <btnAccept Hint="Acceptă și aplică toate modificările" Caption="Acceptă"/>
+          <btnCancel Hint="Ignoră toate modificările" Caption="Anulează"/>
+        </fButtonPanel>
+      </fLowerPanel>
+      <fMiddlePanel>
+        <fBodyPanel>
+          <pSectionsPanel>
+            <pSectionLabel>
+              <lbSections Caption="Opțiuni"/>
+            </pSectionLabel>
+          </pSectionsPanel>
+        </fBodyPanel>
+      </fMiddlePanel>
+    </fOptionsDialog>
+    <fMissingFiles Caption="Fișiere lipsă">
+      <fLowerPanel>
+        <fButtonPanel>
+          <btnCancel Caption="Anulează"/>
+        </fButtonPanel>
+      </fLowerPanel>
+    </fMissingFiles>
+    <fUpdateCheckDialog Caption="Verificare actualizare">
+      <fLowerPanel>
+        <fButtonPanel>
+          <btnCancel Caption="Anulează"/>
+          <btnRetry Caption="Reîncearcă"/>
+        </fButtonPanel>
+      </fLowerPanel>
+      <Message>
+        <Check Text="Se caută o actualizare pentru &quot;%s&quot;, versiunea %s."/>
+        <Error Text="Momentan nu se poate determina dacă există actualizări pentru &quot;%s&quot;. Încearcă mai târziu."/>
+        <None Text="Momentan nu există actualizări pentru &quot;%s&quot;. Încearcă mai târziu."/>
+      </Message>
+    </fUpdateCheckDialog>
+    <fUpdateFoundDialog Caption="Actualizare disponibilă">
+      <fLowerPanel>
+        <fButtonPanel>
+          <btnCancel Caption="Anulează"/>
+          <btnDownload Caption="Descarcă"/>
+          <btnSkip Caption="Ignoră"/>
+        </fButtonPanel>
+        <fAuxPanel>
+          <cbSkipVersion Caption="Ignoră această versiune"/>
+        </fAuxPanel>
+      </fLowerPanel>
+      <Message>
+        <Note Text="Nu există informații despre lansarea versiunii %1:s de &quot;%0:s&quot;"/>
+      </Message>
+    </fUpdateFoundDialog>
+    <fUpdateDownloadDialog Caption="Descărcare actualizare">
+      <fLowerPanel>
+        <fButtonPanel>
+          <btnCancel Caption="Anulează"/>
+          <btnRetry Caption="Reîncearcă"/>
+        </fButtonPanel>
+      </fLowerPanel>
+      <Message>
+        <Fetch Text="Descărcare actualizare pentru &quot;%s&quot;."/>
+        <Error Text="Eroare la descărcarea actualizării &quot;%s&quot;. Încearcă mai târziu."/>
+      </Message>
+    </fUpdateDownloadDialog>
+    <fUpdateSaveDialog Caption="Actualizare descărcată">
+      <fLowerPanel>
+        <fButtonPanel>
+          <btnCancel Caption="Anulează"/>
+          <btnSaveAs Caption="Salvează ca..."/>
+        </fButtonPanel>
+      </fLowerPanel>
+      <Message>
+        <Downloaded Text="S-a descărcat &quot;%s&quot;, versiunea %s."/>
+      </Message>
+      <SaveAsDialog>
+        <Title Caption="Salvează actualizarea ca"/>
+        <File Filters="Fișiere arhivă (*.zip)|*.log|Toate fișierele (*.*)|*.*"/>
+      </SaveAsDialog>
+    </fUpdateSaveDialog>
+    <fLoggerViewForm Caption="Jurnal de depanare">
+      <LineCount Plural="%.0n intrări în jurnal" Singular="%.0n intrare în jurnal"/>
+      <pControls>
+        <pButtons>
+          <btnClear Hint="Curăță actualul jurnal de depanare" Caption="Curăță"/>
+          <btnSaveAs Hint="Salvează jurnalul de depanare într-un fișier" Caption="Salvează ca..."/>
+        </pButtons>
+        <pVerbose>
+          <cbVerbosity Hint="Alege nivelul de detaliu pentru jurnal. Notă: Asta poate consuma multă memorie și să încetinească drastic programul.">
+            <Items Index_0="Critic" Index_1="Minim" Index_2="Normal" Index_3="Detaliat" Index_4="Excesiv"/>
+          </cbVerbosity>
+          <lbVerbosity Caption="Nivel de detaliu:"/>
+        </pVerbose>
+      </pControls>
+      <SaveAsDialog>
+        <Title Caption="Salvează jurnalul de depanare ca"/>
+        <File Filters="Fișiere jurnal (*.log)|*.log|Toate fișierele (*.*)|*.*"/>
+      </SaveAsDialog>
+    </fLoggerViewForm>
+    <fDiffLocaleDialog Caption="Localizare în conflict">
+      <fLowerPanel>
+        <fButtonPanel>
+          <btnProceed Caption="Continuă"/>
+          <btnCancel Caption="Anulează"/>
+        </fButtonPanel>
+      </fLowerPanel>
+      <Message Text="Localizarea acestui fișier se așteaptă să fie %s.&#xA;&#xA;Sigur vrei să-l adaugi în dicționar sub localizarea %s?"/>
+    </fDiffLocaleDialog>
+    <fCorrectFileEndingDialog Caption="Lipsă încheiere linie de final">
+      <fLowerPanel>
+        <fButtonPanel>
+          <btnCorrect Caption="Corectează"/>
+          <btnIgnore Caption="Ignoră"/>
+        </fButtonPanel>
+      </fLowerPanel>
+      <Message Text="Fișierul &quot;%s&quot; nu se încheie cu o linie nouă.&#xA;&#xA;Vrei să corectezi asta adăugând una la sfârșitul fișierului?"/>
+    </fCorrectFileEndingDialog>
+    <fFileEditor Caption="Codepage Witch - %s">
+      <btnCancel Caption="Anulează"/>
+      <btnSave Caption="Salvează"/>
+      <dlgSaveAs Title="Eroare la salvarea fișierului; Salvează fișierul ca"/>
+    </fFileEditor>
+  </Controls>
+</CONFIG>
